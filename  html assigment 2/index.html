@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <link rel ="stylesheet" href = "style.css">
+</head>
+<body>
+    <!--logo&contact-->
+    <header>
+        <div>
+            <a href="#"><img src= "image/pizzalogo.png" alt="Pizza Shop Logo"></a>
+        </div>
+        <nav>
+            <menu>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </menu>
+        </nav>
+    </header>
+    <!--ordering pizza-->
+    <div class="ordering pizza ">
+        <h1>Welcome to Our Pizza Shop</h1>
+        <h2>Choose a pizza</h2>
+    </div>
+    <!--menu items-->
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src= "image/MargheritaPizza.png" alt="Margherita Pizza">
+            <div class="menu-item-content">
+                <h3>Margherita</h3>
+                <p>Classic pizza with tomato sauce, and  mozzarella. </p>
+                <p class="price">$9.89</p>
+            </div>
+        </div> 
+        <div class="menu-item">
+            <img src= "image/pepperoni.jpeg" alt="Pepperoni Pizza">
+            <div class="menu-item-content">
+                <h3>Pepperoni</h3>
+                <p>Pepperoni, mozzarella cheese, and tomato sauce.</p>
+                <p class="price">$12.86</p>
+            </div>
+        </div>  
+        <div class="menu-item">
+            <img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2021/03/Veggie-Pizza-8.jpg" alt="Vegetarian Pizza">
+            <div class="menu-item-content">
+                <h3>Vegetarian</h3>
+                <p>Tomato sauce, mozzarella, bell peppers, olives, and onions.</p>
+                <p class="price">$10</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src= "image/Sicilian2.jpeg" alt=" Sicilian Pizza">
+            <div class="menu-item-content">
+                <h3> Sicilian  </h3>
+                <p>Tomato ,bell peppers, herbs, and onions.</p>
+                <p class="price">$13.45</p>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src= "image/Chicagopizza2.jpeg" alt="Chicago Pizza">
+            <div class="menu-item-content">
+                <h3> Chicago  </h3>
+                <p>Tomato ,veg,meat, and cheese.</p>
+                <p class="price">$15.85</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src= "https://inquiringchef.com/wp-content/uploads/2020/05/Greek-Pizza_square.jpg" alt="  Greek Pizza">
+            <div class="menu-item-content">
+                <h3> Greek  </h3>
+                <p>Tomato ,veg, herbs, and onions.</p>
+                <p class="price">$15.85</p>
+            </div>
+        </div>
+         
+        <!--order pizza-->
+        <main>
+            <section>
+                <h2>Order Your Pizza</h2>
+                <form id="pizzaOrderForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="numPizzas">Number of Pizzas:</label>
+                    <input type="number" id="numPizzas" name="numPizzas">
+                    <label for="size">Pizza Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Select size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <fieldset>
+                        <legend>Toppings:</legend>
+                        <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+                        <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+                        <label><input type="checkbox" name="toppings" value="onions"> Onions</label>
+                        <label><input type="checkbox" name="toppings" value="sausage"> Sausage</label>
+                        <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label>
+                        <label><input type="checkbox" name="toppings" value="extraCheese"> Extra Cheese</label>
+                        <label><input type="checkbox" name="toppings" value="blackOlives"> Black Olives</label>
+                        <label><input type="checkbox" name="toppings" value="greenPeppers"> Green Peppers</label>
+                        <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label>
+                        <label><input type="checkbox" name="toppings" value="spinach"> Spinach</label>
+                    </fieldset>
+                    <button type="submit">Submit Order</button>
+                </form>
+            </section>
+            <!--order confirmation-->
+            <section id="orderConfirmation" class="hidden">
+                <h3>Order Confirmation</h3>
+                <p id="confirmationMessage"></p>
+            </section>
+        </main>
+        
+        <footer>
+            <div>&copy; 2024 Pizza Shop</div>
+            <div>53 PIZZA STREET, MEYER TOWN, CANADA</div>
+            <div>Contact: (123) 456-7890</div>
+        </footer>
+    </div>
+</body>
+</html>
+ 
