@@ -1,0 +1,223 @@
+/** Reset **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** Global **/
+/** Font face **/
+
+.rubik-bubbles-regular {
+	font-family: "Rubik Bubbles", system-ui;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+
+.caveat {
+  font-family: "Caveat", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-lines-regular {
+	font-family: "Rubik Lines", system-ui;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+a, li, p, h3, h4, h5 {
+	font-family: "Edu AU VIC WA NT Dots", sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+h2 {
+	font-family: "Caveat", sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+h1 {
+	font-family: "Caveat", sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 30px;
+    line-height: 2;
+}
+
+.pinkFLoyd {
+	font-family: "Rubik Lines", sans-serif;
+	font-weight: bold;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+/** Header **/
+header {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    padding: 10px;
+    height: 70px;
+    background-image: linear-gradient(#1e1e1e 30%, #000000 90%);
+}
+
+header div {
+	height: 110%;
+	flex: 50%;
+	text-align: center;
+	margin-top: auto;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+	
+}
+
+/* Master Section */
+.video {
+    
+	display: flex;
+	gap: 20px;
+	position: sticky;
+    top: 170px;
+	color: #ff007b;
+	
+}
+
+.youtube-video {
+    width: 35.2em;   /* Makes the iframe take full width */
+    height: 50vh; /* Sets height to full viewport height */
+    border: none;  /* Removes default iframe border */
+}
+
+
+/** Main **/
+main {
+	background-image: linear-gradient(rgb(0, 0, 0), rgb(31, 30, 30), rgb(67, 66, 66));
+	color: #ffffff;
+	padding: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+/* Column for album and lyrics on the left */
+.left-section {
+    width: 60%; /* Adjust width according to your preference */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/** Lyrics **/
+.lyrics {
+	width: 100%;
+	
+}
+.lyrics h2, .lyrics p {
+    margin-bottom: 10px;
+}
+.lyrics div {
+	margin-bottom: 20px;
+}
+
+/* Album section should appear at the top */
+.album {
+    margin-bottom: 40px; /* Spacing between album and lyrics */
+}
+
+/** Album **/
+.album {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+	
+}
+
+
+.album h1 {
+	font-size: 50px;
+	font-weight: bold;
+    line-height: 2;
+	
+}
+.album > div > img {
+	margin-right: 15px;
+}
+.album > div > div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+.album > div > div p, .album > div p {
+	font-family: "Roboto", sans-serif;
+}
+
+.album > div a {
+	color: #ff007b;
+}
+
+.album > div > div img {
+	width: 50px;
+	border-radius: 10%;
+	margin-right: 15px;
+}
+
+/** Footer **/
+footer {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+    padding: 10px;
+    height: 40px;
+    background-color: #393838;
+}
+.highlight {
+	background-color: #ff007b;
+}
+.small-image {
+    height: 300px;
+}
